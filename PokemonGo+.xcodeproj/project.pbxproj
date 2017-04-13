@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B3447AE42EDFAD01BC88316 /* Pods_PokemonGo_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EFF74FDE922F4CBFF75FB2 /* Pods_PokemonGo_.framework */; };
+		8102B8A11E9EB1460005D1B3 /* GeoFire.m in Sources */ = {isa = PBXBuildFile; fileRef = 8102B8981E9EB1460005D1B3 /* GeoFire.m */; };
+		8102B8A21E9EB1460005D1B3 /* GFBase32Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8102B89A1E9EB1460005D1B3 /* GFBase32Utils.m */; };
+		8102B8A31E9EB1460005D1B3 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8102B89C1E9EB1460005D1B3 /* GFGeoHash.m */; };
+		8102B8A41E9EB1460005D1B3 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8102B89E1E9EB1460005D1B3 /* GFGeoHashQuery.m */; };
+		8102B8A51E9EB1460005D1B3 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8102B8A01E9EB1460005D1B3 /* GFQuery.m */; };
+		81C440CF1E9E9F9400E354BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C440CE1E9E9F9400E354BD /* AppDelegate.swift */; };
+		81C440D11E9E9F9400E354BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C440D01E9E9F9400E354BD /* ViewController.swift */; };
+		81C440D41E9E9F9400E354BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C440D21E9E9F9400E354BD /* Main.storyboard */; };
+		81C440D61E9E9F9400E354BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C440D51E9E9F9400E354BD /* Assets.xcassets */; };
+		81C440D91E9E9F9400E354BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C440D71E9E9F9400E354BD /* LaunchScreen.storyboard */; };
+		81C440E11E9EACF500E354BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81C440E01E9EACF500E354BD /* GoogleService-Info.plist */; };
+		81CF448E1E9FF9BD00C56194 /* PokemonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF448D1E9FF9BD00C56194 /* PokemonVC.swift */; };
+		81CF44901EA0036600C56194 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF448F1EA0036600C56194 /* PokemonCell.swift */; };
+		81CF44921EA0041A00C56194 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF44911EA0041A00C56194 /* Pokemon.swift */; };
+		81CF44941EA0076500C56194 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81CF44931EA0076500C56194 /* csv.swift */; };
+		81CF44961EA0079800C56194 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 81CF44951EA0079800C56194 /* pokemon.csv */; };
+		81F2E33D1E9F7BBF001B2604 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F2E33C1E9F7BBF001B2604 /* PokeAnnotation.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DF9CD3681A4ED9530D2D043 /* Pods-PokemonGo+.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonGo+.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonGo+/Pods-PokemonGo+.debug.xcconfig"; sourceTree = "<group>"; };
+		73EFF74FDE922F4CBFF75FB2 /* Pods_PokemonGo_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PokemonGo_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8102B8911E9EB1460005D1B3 /* GeoFire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoFire.h; sourceTree = "<group>"; };
+		8102B8921E9EB1460005D1B3 /* GFCircleQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFCircleQuery.h; sourceTree = "<group>"; };
+		8102B8931E9EB1460005D1B3 /* GFQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFQuery.h; sourceTree = "<group>"; };
+		8102B8941E9EB1460005D1B3 /* GFRegionQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFRegionQuery.h; sourceTree = "<group>"; };
+		8102B8951E9EB1460005D1B3 /* GeoFire-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire-Prefix.pch"; sourceTree = "<group>"; };
+		8102B8971E9EB1460005D1B3 /* GeoFire+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GeoFire+Private.h"; sourceTree = "<group>"; };
+		8102B8981E9EB1460005D1B3 /* GeoFire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoFire.m; sourceTree = "<group>"; };
+		8102B8991E9EB1460005D1B3 /* GFBase32Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFBase32Utils.h; sourceTree = "<group>"; };
+		8102B89A1E9EB1460005D1B3 /* GFBase32Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFBase32Utils.m; sourceTree = "<group>"; };
+		8102B89B1E9EB1460005D1B3 /* GFGeoHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHash.h; sourceTree = "<group>"; };
+		8102B89C1E9EB1460005D1B3 /* GFGeoHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHash.m; sourceTree = "<group>"; };
+		8102B89D1E9EB1460005D1B3 /* GFGeoHashQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFGeoHashQuery.h; sourceTree = "<group>"; };
+		8102B89E1E9EB1460005D1B3 /* GFGeoHashQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFGeoHashQuery.m; sourceTree = "<group>"; };
+		8102B89F1E9EB1460005D1B3 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
+		8102B8A01E9EB1460005D1B3 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
+		8102B8A61E9EB2910005D1B3 /* PokemonGo-Bridiging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokemonGo-Bridiging-Header.h"; sourceTree = "<group>"; };
+		81C440CB1E9E9F9400E354BD /* PokemonGo+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokemonGo+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81C440CE1E9E9F9400E354BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		81C440D01E9E9F9400E354BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81C440D31E9E9F9400E354BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		81C440D51E9E9F9400E354BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81C440D81E9E9F9400E354BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		81C440DA1E9E9F9400E354BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81C440E01E9EACF500E354BD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		81CF448D1E9FF9BD00C56194 /* PokemonVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonVC.swift; sourceTree = "<group>"; };
+		81CF448F1EA0036600C56194 /* PokemonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonCell.swift; sourceTree = "<group>"; };
+		81CF44911EA0041A00C56194 /* Pokemon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		81CF44931EA0076500C56194 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		81CF44951EA0079800C56194 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
+		81F2E33C1E9F7BBF001B2604 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
+		E9FEFF651099C7E086E02824 /* Pods-PokemonGo+.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonGo+.release.xcconfig"; path = "Pods/Target Support Files/Pods-PokemonGo+/Pods-PokemonGo+.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81C440C81E9E9F9300E354BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3447AE42EDFAD01BC88316 /* Pods_PokemonGo_.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6A02E61D9E0051E1B5064B19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				73EFF74FDE922F4CBFF75FB2 /* Pods_PokemonGo_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F100366D9C30D8688DCB588 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0DF9CD3681A4ED9530D2D043 /* Pods-PokemonGo+.debug.xcconfig */,
+				E9FEFF651099C7E086E02824 /* Pods-PokemonGo+.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8102B88F1E9EB1460005D1B3 /* GeoFire */ = {
+			isa = PBXGroup;
+			children = (
+				8102B8901E9EB1460005D1B3 /* API */,
+				8102B8951E9EB1460005D1B3 /* GeoFire-Prefix.pch */,
+				8102B8961E9EB1460005D1B3 /* Implementation */,
+			);
+			path = GeoFire;
+			sourceTree = "<group>";
+		};
+		8102B8901E9EB1460005D1B3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8102B8911E9EB1460005D1B3 /* GeoFire.h */,
+				8102B8921E9EB1460005D1B3 /* GFCircleQuery.h */,
+				8102B8931E9EB1460005D1B3 /* GFQuery.h */,
+				8102B8941E9EB1460005D1B3 /* GFRegionQuery.h */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8102B8961E9EB1460005D1B3 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				8102B8971E9EB1460005D1B3 /* GeoFire+Private.h */,
+				8102B8981E9EB1460005D1B3 /* GeoFire.m */,
+				8102B8991E9EB1460005D1B3 /* GFBase32Utils.h */,
+				8102B89A1E9EB1460005D1B3 /* GFBase32Utils.m */,
+				8102B89B1E9EB1460005D1B3 /* GFGeoHash.h */,
+				8102B89C1E9EB1460005D1B3 /* GFGeoHash.m */,
+				8102B89D1E9EB1460005D1B3 /* GFGeoHashQuery.h */,
+				8102B89E1E9EB1460005D1B3 /* GFGeoHashQuery.m */,
+				8102B89F1E9EB1460005D1B3 /* GFQuery+Private.h */,
+				8102B8A01E9EB1460005D1B3 /* GFQuery.m */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		81C440C21E9E9F9300E354BD = {
+			isa = PBXGroup;
+			children = (
+				81C440CD1E9E9F9400E354BD /* PokemonGo+ */,
+				81C440CC1E9E9F9400E354BD /* Products */,
+				6F100366D9C30D8688DCB588 /* Pods */,
+				6A02E61D9E0051E1B5064B19 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81C440CC1E9E9F9400E354BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81C440CB1E9E9F9400E354BD /* PokemonGo+.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81C440CD1E9E9F9400E354BD /* PokemonGo+ */ = {
+			isa = PBXGroup;
+			children = (
+				81CF44991EA00B0D00C56194 /* Controller */,
+				81CF44981EA00B0400C56194 /* View */,
+				81CF44971EA00AFA00C56194 /* Model */,
+				8102B88F1E9EB1460005D1B3 /* GeoFire */,
+				81CF449A1EA00B2400C56194 /* Resources */,
+				81C440CE1E9E9F9400E354BD /* AppDelegate.swift */,
+				81C440D21E9E9F9400E354BD /* Main.storyboard */,
+				81C440D71E9E9F9400E354BD /* LaunchScreen.storyboard */,
+				81C440D51E9E9F9400E354BD /* Assets.xcassets */,
+			);
+			path = "PokemonGo+";
+			sourceTree = "<group>";
+		};
+		81CF44971EA00AFA00C56194 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81F2E33C1E9F7BBF001B2604 /* PokeAnnotation.swift */,
+				81CF44911EA0041A00C56194 /* Pokemon.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		81CF44981EA00B0400C56194 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				81CF448F1EA0036600C56194 /* PokemonCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		81CF44991EA00B0D00C56194 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				81C440D01E9E9F9400E354BD /* ViewController.swift */,
+				81CF448D1E9FF9BD00C56194 /* PokemonVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		81CF449A1EA00B2400C56194 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8102B8A61E9EB2910005D1B3 /* PokemonGo-Bridiging-Header.h */,
+				81CF44931EA0076500C56194 /* csv.swift */,
+				81C440E01E9EACF500E354BD /* GoogleService-Info.plist */,
+				81C440DA1E9E9F9400E354BD /* Info.plist */,
+				81CF44951EA0079800C56194 /* pokemon.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81C440CA1E9E9F9300E354BD /* PokemonGo+ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81C440DD1E9E9F9400E354BD /* Build configuration list for PBXNativeTarget "PokemonGo+" */;
+			buildPhases = (
+				160055CE8E0CDA86FF73C640 /* [CP] Check Pods Manifest.lock */,
+				81C440C71E9E9F9300E354BD /* Sources */,
+				81C440C81E9E9F9300E354BD /* Frameworks */,
+				81C440C91E9E9F9300E354BD /* Resources */,
+				8A14684A7397C13FE592F8AE /* [CP] Embed Pods Frameworks */,
+				BCCF2213DA516EBE7B9244DA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PokemonGo+";
+			productName = "PokemonGo+";
+			productReference = 81C440CB1E9E9F9400E354BD /* PokemonGo+.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81C440C31E9E9F9300E354BD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Ammad;
+				TargetAttributes = {
+					81C440CA1E9E9F9300E354BD = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = U3K2KK6JPR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 81C440C61E9E9F9300E354BD /* Build configuration list for PBXProject "PokemonGo+" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81C440C21E9E9F9300E354BD;
+			productRefGroup = 81C440CC1E9E9F9400E354BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81C440CA1E9E9F9300E354BD /* PokemonGo+ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81C440C91E9E9F9300E354BD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81C440D91E9E9F9400E354BD /* LaunchScreen.storyboard in Resources */,
+				81C440E11E9EACF500E354BD /* GoogleService-Info.plist in Resources */,
+				81C440D61E9E9F9400E354BD /* Assets.xcassets in Resources */,
+				81C440D41E9E9F9400E354BD /* Main.storyboard in Resources */,
+				81CF44961EA0079800C56194 /* pokemon.csv in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		160055CE8E0CDA86FF73C640 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A14684A7397C13FE592F8AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonGo+/Pods-PokemonGo+-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCCF2213DA516EBE7B9244DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PokemonGo+/Pods-PokemonGo+-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81C440C71E9E9F9300E354BD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81CF44941EA0076500C56194 /* csv.swift in Sources */,
+				8102B8A21E9EB1460005D1B3 /* GFBase32Utils.m in Sources */,
+				81F2E33D1E9F7BBF001B2604 /* PokeAnnotation.swift in Sources */,
+				81C440D11E9E9F9400E354BD /* ViewController.swift in Sources */,
+				8102B8A31E9EB1460005D1B3 /* GFGeoHash.m in Sources */,
+				81C440CF1E9E9F9400E354BD /* AppDelegate.swift in Sources */,
+				81CF44901EA0036600C56194 /* PokemonCell.swift in Sources */,
+				81CF44921EA0041A00C56194 /* Pokemon.swift in Sources */,
+				81CF448E1E9FF9BD00C56194 /* PokemonVC.swift in Sources */,
+				8102B8A11E9EB1460005D1B3 /* GeoFire.m in Sources */,
+				8102B8A41E9EB1460005D1B3 /* GFGeoHashQuery.m in Sources */,
+				8102B8A51E9EB1460005D1B3 /* GFQuery.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		81C440D21E9E9F9400E354BD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C440D31E9E9F9400E354BD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		81C440D71E9E9F9400E354BD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				81C440D81E9E9F9400E354BD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		81C440DB1E9E9F9400E354BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81C440DC1E9E9F9400E354BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81C440DE1E9E9F9400E354BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DF9CD3681A4ED9530D2D043 /* Pods-PokemonGo+.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U3K2KK6JPR;
+				INFOPLIST_FILE = "PokemonGo+/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creative.locaterpoke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokemonGo+/PokemonGo-Bridiging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		81C440DF1E9E9F9400E354BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9FEFF651099C7E086E02824 /* Pods-PokemonGo+.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = U3K2KK6JPR;
+				INFOPLIST_FILE = "PokemonGo+/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.creative.locaterpoke;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "PokemonGo+/PokemonGo-Bridiging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81C440C61E9E9F9300E354BD /* Build configuration list for PBXProject "PokemonGo+" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C440DB1E9E9F9400E354BD /* Debug */,
+				81C440DC1E9E9F9400E354BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81C440DD1E9E9F9400E354BD /* Build configuration list for PBXNativeTarget "PokemonGo+" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81C440DE1E9E9F9400E354BD /* Debug */,
+				81C440DF1E9E9F9400E354BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81C440C31E9E9F9300E354BD /* Project object */;
+}

@@ -86,7 +86,10 @@ class ViewController2: UIViewController  , UICollectionViewDelegate , UICollecti
         else {
             poke = pokemon[indexPath.row]
         }
-        
+        performSegue(withIdentifier: "fromSecondViewController", sender: poke)
+      var pokemonID = poke.pokedexId
+//        _ = dismiss(animated: true, completion: nil)
+
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -113,6 +116,11 @@ class ViewController2: UIViewController  , UICollectionViewDelegate , UICollecti
             filteredpokemon = pokemon.filter({$0.name.range(of: lower) != nil})
             collection.reloadData()
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dvc = segue.destination as! ViewController
+        dvc.randomPokeDisplay(id: 1)
     }
 
 }

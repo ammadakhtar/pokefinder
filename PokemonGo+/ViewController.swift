@@ -125,5 +125,11 @@ class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDe
     
     }
     
+    func randomPokeDisplay(id : Int) {
+        let loc = CLLocation(latitude: map.centerCoordinate.latitude, longitude: map.centerCoordinate.longitude)
+//               let rand = arc4random_uniform(151)+1
+               createSighting(forlocation: loc, withPokemon: Int(id))
+        }
+    
 }
 

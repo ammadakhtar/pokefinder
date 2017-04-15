@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 import FirebaseDatabase
 
-class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate , DataSentDelegate{
+class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate , DataSentDelegate {
     var pokemonid : Int?
     @IBOutlet weak var map: MKMapView!
     let locationmanager = CLLocationManager()

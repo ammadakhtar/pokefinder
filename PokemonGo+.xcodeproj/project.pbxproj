@@ -13,9 +13,10 @@
 		8102B8A31E9EB1460005D1B3 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8102B89C1E9EB1460005D1B3 /* GFGeoHash.m */; };
 		8102B8A41E9EB1460005D1B3 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8102B89E1E9EB1460005D1B3 /* GFGeoHashQuery.m */; };
 		8102B8A51E9EB1460005D1B3 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 8102B8A01E9EB1460005D1B3 /* GFQuery.m */; };
+		818ADDCE1EA2260900BB3D94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 818ADDCD1EA2260900BB3D94 /* Main.storyboard */; };
+		818ADDD01EA2283A00BB3D94 /* pokemon.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 818ADDCF1EA2283A00BB3D94 /* pokemon.ttf */; };
 		81C440CF1E9E9F9400E354BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C440CE1E9E9F9400E354BD /* AppDelegate.swift */; };
 		81C440D11E9E9F9400E354BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81C440D01E9E9F9400E354BD /* ViewController.swift */; };
-		81C440D41E9E9F9400E354BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C440D21E9E9F9400E354BD /* Main.storyboard */; };
 		81C440D61E9E9F9400E354BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81C440D51E9E9F9400E354BD /* Assets.xcassets */; };
 		81C440D91E9E9F9400E354BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81C440D71E9E9F9400E354BD /* LaunchScreen.storyboard */; };
 		81C440E11E9EACF500E354BD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81C440E01E9EACF500E354BD /* GoogleService-Info.plist */; };
@@ -46,10 +47,11 @@
 		8102B89F1E9EB1460005D1B3 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		8102B8A01E9EB1460005D1B3 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		8102B8A61E9EB2910005D1B3 /* PokemonGo-Bridiging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PokemonGo-Bridiging-Header.h"; sourceTree = "<group>"; };
+		818ADDCD1EA2260900BB3D94 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		818ADDCF1EA2283A00BB3D94 /* pokemon.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = pokemon.ttf; sourceTree = "<group>"; };
 		81C440CB1E9E9F9400E354BD /* PokemonGo+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PokemonGo+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81C440CE1E9E9F9400E354BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81C440D01E9E9F9400E354BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		81C440D31E9E9F9400E354BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81C440D51E9E9F9400E354BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81C440D81E9E9F9400E354BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81C440DA1E9E9F9400E354BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,9 +159,9 @@
 				8102B88F1E9EB1460005D1B3 /* GeoFire */,
 				81CF449A1EA00B2400C56194 /* Resources */,
 				81C440CE1E9E9F9400E354BD /* AppDelegate.swift */,
-				81C440D21E9E9F9400E354BD /* Main.storyboard */,
 				81C440D71E9E9F9400E354BD /* LaunchScreen.storyboard */,
 				81C440D51E9E9F9400E354BD /* Assets.xcassets */,
+				818ADDCD1EA2260900BB3D94 /* Main.storyboard */,
 			);
 			path = "PokemonGo+";
 			sourceTree = "<group>";
@@ -198,6 +200,7 @@
 				81C440E01E9EACF500E354BD /* GoogleService-Info.plist */,
 				81C440DA1E9E9F9400E354BD /* Info.plist */,
 				81CF44951EA0079800C56194 /* pokemon.csv */,
+				818ADDCF1EA2283A00BB3D94 /* pokemon.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -266,9 +269,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				81C440D91E9E9F9400E354BD /* LaunchScreen.storyboard in Resources */,
+				818ADDCE1EA2260900BB3D94 /* Main.storyboard in Resources */,
 				81C440E11E9EACF500E354BD /* GoogleService-Info.plist in Resources */,
 				81C440D61E9E9F9400E354BD /* Assets.xcassets in Resources */,
-				81C440D41E9E9F9400E354BD /* Main.storyboard in Resources */,
+				818ADDD01EA2283A00BB3D94 /* pokemon.ttf in Resources */,
 				81CF44961EA0079800C56194 /* pokemon.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,14 +350,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		81C440D21E9E9F9400E354BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				81C440D31E9E9F9400E354BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		81C440D71E9E9F9400E354BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

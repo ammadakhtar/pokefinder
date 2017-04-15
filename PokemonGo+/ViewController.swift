@@ -10,8 +10,8 @@ import UIKit
 import MapKit
 import FirebaseDatabase
 
-class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate {
-    
+class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDelegate , DataSentDelegate{
+    var pokemonid : Int?
     @IBOutlet weak var map: MKMapView!
     let locationmanager = CLLocationManager()
     var maphascenterd = false
@@ -117,19 +117,27 @@ class ViewController: UIViewController , MKMapViewDelegate , CLLocationManagerDe
     }
     
     @IBAction func randomPokemonBtn(_ sender: UIButton) {
-    // put random pokemon at centre of map when pokeball is pressed
-//        let loc = CLLocation(latitude: map.centerCoordinate.latitude, longitude: map.centerCoordinate.longitude)
-//        let rand = arc4random_uniform(151)+1
-//        createSighting(forlocation: loc, withPokemon: Int(rand))
-         
-    
+        
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PokemonDetailVC" {
+            let sendingVC: ViewController2 = segue.destination as! ViewController2
+            sendingVC.delegate = self
+            
+        }
+    }
+   
     
     func randomPokeDisplay(id : Int) {
         let loc = CLLocation(latitude: map.centerCoordinate.latitude, longitude: map.centerCoordinate.longitude)
-//               let rand = arc4random_uniform(151)+1
                createSighting(forlocation: loc, withPokemon: Int(id))
+        
         }
+    func getpokeid(data: Int) {
+        pokemonid = data
+        randomPokeDisplay(id: pokemonid!)
+    }
     
 }
 
